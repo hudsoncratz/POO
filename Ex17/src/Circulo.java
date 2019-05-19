@@ -69,7 +69,7 @@ public class Circulo {
 	}
 	public String toString() {
 		StringBuilder dados = new StringBuilder();
-		dados.append("Coordenada: " + this.getPonto());
+		dados.append(this.getPonto());
 		dados.append("\nRaio: " + this.getRaio());
 		return dados.toString();
 	}

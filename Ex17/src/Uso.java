@@ -77,14 +77,14 @@ public class Uso {
 		}
 		for(i=0;i<QTDE;i++) {
 			System.out.println("\n" + vet2[i]);
-			System.out.println("\n" + vet2[i].calculaArea());
-			System.out.println("\n" + vet2[i].calculaPerimetro());
+			System.out.println("\nArea:" + vet2[i].calculaArea());
+			System.out.println("\nPerimetro" + vet2[i].calculaPerimetro());
 			
 		}
 		for(i=0;i<QTDE;i++) {
 			System.out.println("\n" + vet1[i]);
-			System.out.println("\n" + vet1[i].calculaArea());
-			System.out.println("\n" + vet1[i].calculaPerimetro());
+			System.out.println("\nArea:" + vet1[i].calculaArea());
+			System.out.println("\nPerimetro:" + vet1[i].calculaPerimetro());
 			
 			
 		}

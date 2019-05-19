@@ -72,7 +72,7 @@ public class Quadrado {
 	
 	public String toString() {
 		StringBuilder dados = new StringBuilder();
-		dados.append("Coordenada: " + this.getPonto());
+		dados.append(this.getPonto());
 		dados.append("\nComprimento: " + this.getComprimento());
 		return dados.toString();
 	}
