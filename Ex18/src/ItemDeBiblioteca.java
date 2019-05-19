@@ -1,11 +1,9 @@
 
-public interface ItemDeBiblioteca extends Livro implements LivroDeBiblioteca{
-
-	boolean isEmprestado();
+public interface ItemDeBiblioteca {
+	public boolean isEmprestado();
 	public void empresta();
 	public void devolve();
-	public void localiza();
-	public void apresentaDescricao();
-
-
+	public String localiza();
+	public String apresentaDescricao(); 
+	
 }
