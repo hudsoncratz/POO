@@ -66,7 +66,7 @@ public class Periodo {
 	 */
 	public void setPeriodo(Data dInicio, Data dFim, Horario hInicio, Horario hFim) throws Exception {
 		try {
-			if( (dInicio.compareTo(dFim)==1) || (dInicio.compareTo(dFim)==0 && hInicio.compareTo(hFim)==1)) {
+			if( (this.getdInicio().compareTo(dInicio,dFim)==-1) || (this.getdFim().compareTo(dInicio,dFim)==0 && hInicio.compareTo(hFim)==1)) {
 				this.dInicio = dInicio;
 				this.dFim = dFim;
 				this.hInicio = hInicio;

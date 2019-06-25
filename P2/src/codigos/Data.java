@@ -159,23 +159,33 @@ public class Data {
 		/**
 		 * Esse metodo verifica se duas datas são iguais (0), maior (1) ou menor (-1) do que a outra
 		 * 
-		 * @param objeto
+		 * @param data_1
+		 * @param data_2
 		 * @return int
 		 *
 		 */
-		public int compareTo(Object objeto)throws Exception {
-			Data aux = (Data) objeto;
-			if((aux.getAno() > this.getAno()) || (aux.getAno() == this.getAno() && aux.getMes() > this.getMes())
-					|| (aux.getAno() == this.getAno() && aux.getMes() == this.getMes() && aux.getDia() > this.getDia()) ) {
-				return 1;
+		public static int compareTo(Data data_1, Data data_2) {   //se data_1 for menor retorna -1
+			if (data_1.getAno() > data_2.getAno()) return 1;
+			else { 
+				if (data_1.getAno() < data_2.getAno()) return -1;
+				else {
+					if (data_1.getMes() > data_2.getMes()) return 1;
+					else {
+						if (data_1.getMes() < data_2.getMes()) return -1;
+						else {
+							if (data_1.getDia() > data_2.getDia()) return 1;
+							else {
+								if (data_1.getDia() < data_2.getDia()) return -1;
+								else {
+									return 0;
+								}
+							}
+						}
+					}
+				}
 			}
-			
-			if((aux.getAno() < this.getAno()) || (aux.getAno() == this.getAno() && aux.getMes() < this.getMes())
-					|| (aux.getAno() == this.getAno() && aux.getMes() == this.getMes() && aux.getDia() < this.getDia()) )  {
-				return -1;
-			}
-			else return 0;		
 		}
+		
 		/**
 		 * Esse metodo retorna uma String referente a classe Data
 		 * 

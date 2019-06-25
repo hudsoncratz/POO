@@ -112,16 +112,16 @@ public class Agenda extends ItemAgenda {
 	 * Metodo que retorna itens entre duas datas especificas
 	 *@return List
 	 */
-	public List IntervaloDeData(Data dInicio, Data dFim) throws Exception {
+	public List IntervaloDeData(Data _inicial, Data _final) {
 		int i;
-		List<ItemAgenda> itensEntreData = new LinkedList<ItemAgenda>();
+		List<ItemAgenda> itens_entre_data_informada = new LinkedList<ItemAgenda>();
 		for (i = 0; i < this.itensAgenda.size(); i++) {
-			if ( this.itensAgenda.get(i).getDuracao().getdInicio().compareTo(dInicio) == 1 && 
-					this.itensAgenda.get(i).getDuracao().getdFim().compareTo(dFim) == 1) {
-				itensEntreData.add(this.itensAgenda.get(i));
+			if (Data.compareTo(this.itensAgenda.get(i).getDuracao().getdInicio(), _inicial) != -1 && 
+					Data.compareTo(this.itensAgenda.get(i).getDuracao().getdFim(), _final) != 1) {
+				itens_entre_data_informada.add(this.itensAgenda.get(i));
 			}
 		}
-		return itensEntreData;
+		return itens_entre_data_informada;
 	}
 	/**
 	 * Metodo que retorna itens da classe Meta ordenados
