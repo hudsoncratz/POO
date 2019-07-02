@@ -7,7 +7,7 @@ package codigos;
  */
 public class Lembrete extends ItemAgenda implements Comparable<Lembrete> {
 
-	int aviso;
+	private int aviso;
 	/**
 	 * Construtor
 	 * 

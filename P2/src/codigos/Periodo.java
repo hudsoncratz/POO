@@ -6,8 +6,8 @@ package codigos;
  *
  */
 public class Periodo {
-	Data dInicio, dFim;
-	Horario hInicio, hFim;
+	private Data dInicio, dFim;
+	private Horario hInicio, hFim;
 	
 	/**
 	 * Construtor

@@ -7,7 +7,7 @@ package codigos;
  *
  */
 public class Evento extends ItemAgenda implements Comparable<Evento>{
-	String local;
+	private String local;
 
 	/**
 	 * Construtor 
